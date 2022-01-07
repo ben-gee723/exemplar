@@ -1,0 +1,311 @@
+@import url('./style.css');
+
+/* Allgemine, Fonts, und Farben */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    /* border: 1px solid red; */
+}
+
+:root {
+    --dark-color: rgb(68, 68, 68);
+    --light-color: white;
+    --grey-color: lightgrey;
+    --border-square: 0px;
+    --border-round-5: 5px;
+    --border-round-10: 10px;
+    color: rgb(68, 68, 68);
+}
+
+footer,h1, h2, h3, h4, h5, h6, p, div, article, aside, table, form, legend {
+    margin: 10px 0;
+    padding: 5px;
+}
+
+body {
+    background: var(--grey-color);
+}
+
+div, article, aside, form, fieldset, legend, input {
+    background: white;
+    border-radius: var(--border-round-10);
+}
+
+nav ul {
+    list-style: none;
+}
+
+section article {
+    margin: 20px;
+}
+
+.head-board {
+    height: 90vh;
+}
+
+.bg-pr{
+    background: var(--primary-color);
+}
+
+.bg-se{
+    background: var(--secondary-color);
+}
+
+.bg-te{
+    background: var(--tertiary-color);
+}
+
+.bg-lt{
+    background: var(--light-color);
+}
+
+.bg-dk{
+    background: var(--dark-color);
+}
+
+.bg-gr{
+    background: var(--grey-color);
+}
+
+.co-lt{
+    color: var(--light-color);
+}
+
+.co-pr{
+    color: var(--primary-color);
+}
+
+.co-se{
+    color: var(--secondary-color);
+}
+
+.co-te{
+    color: var(--tertiary-color);
+}
+
+.co-dk{
+    color: var(--dark-color);
+}
+
+.co-gr{
+    color: var(--grey-color);
+}
+
+/* Messungen */
+
+.h-20pc {
+    height: 20%;
+}
+
+.h-30pc {
+    height: 30%;
+} 
+
+.h-100px {
+    height: 100px;
+} 
+
+/* Positionierung */
+
+.flex {
+    display: flex;
+}
+
+.fl-wp  {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.fl-co {
+    display: flex;
+    flex-direction: column;
+}
+
+.jc-fs{
+    justify-content: flex-start;
+}
+
+.jc-ce{
+    justify-content: center;
+}
+
+.jc-fe{
+    justify-content: flex-end;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-se {
+    justify-content: space-evenly;
+}
+
+.ai-fs{
+    align-items: flex-start;
+}
+
+.ai-ce{
+    align-items: center;
+}
+
+.ai-fe{
+    align-items: flex-end;
+}
+
+.ta-ce {
+    text-align: center;
+}
+
+/* Tabellen */
+
+table, table legend, th, td {
+    border: 1px solid var(--dark-color);
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: var(--border-round-10);
+    border-style: hidden;
+}
+
+th, td {
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+}
+
+th {
+    border-bottom: 3px solid;
+}
+
+/* Formen */
+
+form, fieldset, label, input, button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+fieldset, label, input {
+    margin: 5px 0;
+}
+
+fieldset label, fieldset input {
+    color: var(--light-color);
+}
+
+legend {
+    background: var(--grey-color);
+}
+
+button {
+    border-radius: var(--border-round-10);
+}
+
+.fo-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.fo-grid-cb {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    align-items: center;
+}
+
+/* Animationen */
+.loading-img {
+    fill: var(--primary-color);
+}
+
+.rotate {
+    animation: rotate 1.7s linear infinite;
+}
+
+@keyframes rotate { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}
+
+.slideIn-le {
+    animation: slideIn-le 1.5s;
+}
+
+@keyframes slideIn-le { 
+    0% {
+        opacity: 0; 
+        margin-left: -50px;
+    }
+    100% { 
+        opacity: 1; 
+        margin-left: 0px;
+    } 
+}
+
+.slideIn-ri {
+    animation: slideIn-ri 1.5s;
+}
+
+@keyframes slideIn-ri { 
+    0% {
+        opacity: 0; 
+        margin-left: 50px;
+    }
+    100% { 
+        opacity: 1; 
+        margin-left: 0px;
+    } 
+}
+
+/* Pseudo Elemente Transitionen */
+
+.hover{
+    transition: transform .1s ease-in-out;
+}
+
+.hover:hover {
+    transform: translate(0, -3px);
+}
+
+/* .active{
+
+}
+
+.active:active {
+    
+}
+
+.visited {
+
+}
+
+.visited:visited {
+    
+} */
+
+/* Media Queries */
+
+@media only screen and (min-width: 768px) {
+    .main-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .main-grid {
+        width: 80%;
+        margin: 0 auto;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
