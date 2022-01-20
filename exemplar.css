@@ -41,10 +41,6 @@ section article {
     margin: 20px;
 }
 
-.head-board {
-    height: 90vh;
-}
-
 .bg-pr{
     background: var(--primary-color);
 }
@@ -61,7 +57,7 @@ section article {
     background: var(--light-color);
 }
 
-.bg-dk{
+.bg-dr{
     background: var(--dark-color);
 }
 
@@ -95,6 +91,22 @@ section article {
 
 /* Messungen */
 
+.vh-10{
+    height: 10vh;
+}
+
+.vh-90 {
+    height: 90vh;
+}
+
+.vh-100 {
+    height: 100vh;
+}
+
+.vw-100{
+    width: 100vw;
+}
+
 .h-20pc {
     height: 20%;
 }
@@ -102,6 +114,10 @@ section article {
 .h-30pc {
     height: 30%;
 } 
+
+.h-100pc {
+    height: 100%;
+}
 
 .h-100px {
     height: 100px;
