@@ -14,10 +14,6 @@
     --dark-color: rgb(68, 68, 68);
     --light-color: white;
     --grey-color: lightgrey;
-    --border-square: 0px;
-    --border-round-5: 5px;
-    --border-round-10: 10px;
-    color: rgb(68, 68, 68);
 }
 
 footer,h1, h2, h3, h4, h5, h6, p, div, article, aside, table, form, legend {
@@ -25,13 +21,8 @@ footer,h1, h2, h3, h4, h5, h6, p, div, article, aside, table, form, legend {
     padding: 5px;
 }
 
-body {
-    background: var(--grey-color);
-}
-
 div, article, aside, form, fieldset, legend, input {
-    /* background: white; */
-    border-radius: var(--border-square);
+    border-radius: var(--border-choice);
 }
 
 nav ul {

@@ -2,4 +2,14 @@
     --primary-color:red;
     --secondary-color:green;
     --tertiary-color:blue;
+    --border-square: 0px;
+    --border-round-5: 5px;
+    --border-round-10: 10px;
+    --border-choice: var(--border-square);
+}
+
+/* Spezifische Styles */
+
+.hb-pi {
+    background-image: url();
 }
