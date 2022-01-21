@@ -95,6 +95,34 @@ section article {
 
 /* Messungen */
 
+.vw25 {
+    height: 25vh;
+}
+
+.vw50 {
+    height: 50vh;
+}
+
+.vw75 {
+    height: 75vh;
+}
+
+.vw100 {
+    height: 100vh;
+}
+
+.vh10 {
+    height: 10vh;
+}
+
+.vh90 {
+    height: 90vh;
+}
+
+.vh100 {
+    height: 100vh;
+}
+
 .h-20pc {
     height: 20%;
 }
@@ -123,39 +151,53 @@ section article {
     flex-direction: column;
 }
 
+.fl-ro {
+    display: flex;
+    flex-direction: row;
+}
+
 .jc-fs{
+    display: flex;
     justify-content: flex-start;
 }
 
 .jc-ce{
+    display: flex;
     justify-content: center;
 }
 
 .jc-fe{
+    display: flex;
     justify-content: flex-end;
 }
 
 .jc-sa {
+    display: flex;
     justify-content: space-around;
 }
 
 .jc-sb {
+    display: flex;
     justify-content: space-between;
 }
 
 .jc-se {
+    display: flex;
     justify-content: space-evenly;
 }
 
 .ai-fs{
+    display: flex;
     align-items: flex-start;
 }
 
 .ai-ce{
+    display: flex;
     align-items: center;
 }
 
 .ai-fe{
+    display: flex;
     align-items: flex-end;
 }
 
