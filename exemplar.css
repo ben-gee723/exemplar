@@ -37,13 +37,64 @@ nav ul {
     list-style: none;
 }
 
-section article {
-    margin: 20px;
+/* Tabellen */
+
+table, table legend, th, td {
+    border: 1px solid var(--dark-color);
 }
 
-.head-board {
-    height: 90vh;
+table {
+    border-collapse: collapse;
+    border-radius: var(--border-round-10);
+    border-style: hidden;
 }
+
+th, td {
+    width: 33%;
+    margin: 5px;
+    padding: 5px;
+}
+
+th {
+    border-bottom: 3px solid;
+}
+
+/* Formen */
+
+form, fieldset, label, input, button {
+    width: 100%;
+    padding: 5px;
+    border: none;
+}
+
+fieldset, label, input {
+    margin: 5px 0;
+}
+
+fieldset label, fieldset input {
+    color: var(--light-color);
+}
+
+legend {
+    background: var(--grey-color);
+}
+
+button {
+    border-radius: var(--border-round-10);
+}
+
+.fo-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.fo-grid-cb {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    align-items: center;
+}
+
+/* Farben */
 
 .bg-pr{
     background: var(--primary-color);
@@ -205,63 +256,6 @@ section article {
     text-align: center;
 }
 
-/* Tabellen */
-
-table, table legend, th, td {
-    border: 1px solid var(--dark-color);
-}
-
-table {
-    border-collapse: collapse;
-    border-radius: var(--border-round-10);
-    border-style: hidden;
-}
-
-th, td {
-    width: 33%;
-    margin: 5px;
-    padding: 5px;
-}
-
-th {
-    border-bottom: 3px solid;
-}
-
-/* Formen */
-
-form, fieldset, label, input, button {
-    width: 100%;
-    padding: 5px;
-    border: none;
-}
-
-fieldset, label, input {
-    margin: 5px 0;
-}
-
-fieldset label, fieldset input {
-    color: var(--light-color);
-}
-
-legend {
-    background: var(--grey-color);
-}
-
-button {
-    border-radius: var(--border-round-10);
-}
-
-.fo-grid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.fo-grid-cb {
-    display: grid;
-    grid-template-columns: 10% 1fr;
-    align-items: center;
-}
-
 /* Animationen */
 .loading-img {
     fill: var(--primary-color);
@@ -306,6 +300,32 @@ button {
         opacity: 1; 
         margin-left: 0px;
     } 
+}
+
+/* Snapping */
+
+.sn-co {
+    scroll-snap-type: mandatory;
+}
+
+.sn-co-y {
+    scroll-snap-type: y mandatory;
+}
+
+.sn-co-pr {
+    scroll-snap-type: proximity;
+}
+
+.sn-st {
+    scroll-snap-align: start;
+}
+
+.sn-ce {
+    scroll-snap-align: start;
+}
+
+.sn-en {
+    scroll-snap-align: start;
 }
 
 /* Pseudo Elemente Transitionen */
