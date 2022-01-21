@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     border: none;
+    background-color: none;
     /* border: 1px solid red; */
 }
 
@@ -29,12 +30,17 @@ body {
 }
 
 div, article, aside, form, fieldset, legend, input {
-    background: white;
-    border-radius: var(--border-round-10);
+    /* background: white; */
+    border-radius: var(--border-square);
 }
 
 nav ul {
     list-style: none;
+}
+
+footer {
+    position: absolute;
+    bottom: -10px;
 }
 
 /* Tabellen */
@@ -174,6 +180,10 @@ button {
     height: 100vh;
 }
 
+.w-100pc {
+    width: 100%;
+} 
+
 .h-20pc {
     height: 20%;
 }
@@ -182,11 +192,23 @@ button {
     height: 30%;
 } 
 
+.h-100pc {
+    height: 100%;
+}
+
 .h-100px {
     height: 100px;
 } 
 
 /* Positionierung */
+
+.po-re {
+    position: relative;
+}
+
+.po-ab {
+    position: absolute;
+}
 
 .flex {
     display: flex;
@@ -321,11 +343,11 @@ button {
 }
 
 .sn-ce {
-    scroll-snap-align: start;
+    scroll-snap-align: center;
 }
 
 .sn-en {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 /* Pseudo Elemente Transitionen */
