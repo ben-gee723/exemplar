@@ -16,7 +16,7 @@
     --grey-color: lightgrey;
 }
 
-footer,h1, h2, h3, h4, h5, h6, p, div, article, aside, table, form, legend {
+nav, footer,h1, h2, h3, h4, h5, h6, p, div, article, aside, table, form, legend {
     margin: 10px 0;
     padding: 5px;
 }
@@ -171,6 +171,19 @@ button {
     height: 100vh;
 }
 
+.w-30pc {
+    width: 30%;
+} 
+
+.w-70pc {
+    width: 70%;
+} 
+
+.w-80pc {
+    width: 80%;
+} 
+
+
 .w-100pc {
     width: 100%;
 } 
@@ -192,6 +205,11 @@ button {
 } 
 
 /* Positionierung */
+
+.ma0a-70{
+    width: 70%;
+    margin: 0 auto
+}
 
 .po-re {
     position: relative;
@@ -327,6 +345,10 @@ button {
 
 .sn-co-pr {
     scroll-snap-type: proximity;
+}
+
+.sn-co-pr-y {
+    scroll-snap-type: y proximity;
 }
 
 .sn-st {

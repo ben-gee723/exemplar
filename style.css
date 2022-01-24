@@ -9,7 +9,23 @@
 }
 
 /* Spezifische Styles */
+.bg-main {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./исоМетрикДесктопРосеТурк.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header {
+    
+}
 
-.hb-pi {
-    background-image: url();
+nav ul li {
+    border-bottom: 1px solid lightgray;
+}
+
+.bg-glass {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
 }
