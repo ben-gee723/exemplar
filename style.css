@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Square&display=swap');
+
 :root {
+    font-family: 'Nova Square', cursive;
     --primary-color:red;
     --secondary-color:green;
     --tertiary-color:blue;
@@ -11,14 +14,17 @@
 /* Spezifische Styles */
 .bg-main {
     width: 100%;
-    height: 100vh;
-    background-image: url("./исоМетрикДесктопРосеТурк.png");
+    background-image: url("./bg-bluehex.jpg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 header {
     
+}
+
+section {
+    background-color: none;
 }
 
 nav ul li {
